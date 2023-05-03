@@ -3,11 +3,10 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Usage as Simple } from "./patterns/simple/usage";
 import { Usage as CompoundPattern } from "./patterns/compound-pattern/usage";
-import { Usage as ControlProps } from "./patterns/control-props-pattern/useage";
+import { Usage as ControlProps } from "./patterns/control-props-pattern/usage";
+import { Usage as CustomHook } from "./patterns/custom-hooks/usage";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<div className="App">
 			<div>
@@ -41,6 +40,9 @@ function App() {
 			</div>
 			<div>
 				<ControlProps></ControlProps>
+			</div>
+			<div>
+				<CustomHook></CustomHook>
 			</div>
 		</div>
 	);
