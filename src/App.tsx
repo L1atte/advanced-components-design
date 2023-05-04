@@ -46,7 +46,6 @@ function App() {
 				<CustomHook></CustomHook>
 			</div>
 			<div>
-				<div>21</div>
 				<PropsGetter></PropsGetter>
 			</div>
 		</div>
