@@ -1,7 +1,11 @@
 import { MinusOutlined } from "@ant-design/icons";
 
 const Decrement = ({ onClick }: { onClick: () => void }): JSX.Element => {
-	return <MinusOutlined onClick={onClick}></MinusOutlined>;
+	return (
+		<button>
+			<MinusOutlined onClick={onClick}></MinusOutlined>
+		</button>
+	);
 };
 
 export { Decrement };

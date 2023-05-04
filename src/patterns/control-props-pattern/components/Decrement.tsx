@@ -4,7 +4,11 @@ import { useCounterContext } from "../useCounterContext";
 const Decrement = (): JSX.Element => {
 	const { handleDecrement } = useCounterContext();
 
-	return <MinusOutlined onClick={handleDecrement}></MinusOutlined>;
+	return (
+		<button>
+			<MinusOutlined onClick={handleDecrement}></MinusOutlined>
+		</button>
+	);
 };
 
 export { Decrement };

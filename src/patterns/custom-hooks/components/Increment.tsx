@@ -1,7 +1,11 @@
 import { PlusOutlined } from "@ant-design/icons";
 
 const Increment = ({ onClick }: { onClick: () => void }): JSX.Element => {
-	return <PlusOutlined onClick={onClick}></PlusOutlined>;
+	return (
+		<button>
+			<PlusOutlined onClick={onClick}></PlusOutlined>
+		</button>
+	);
 };
 
 export { Increment };

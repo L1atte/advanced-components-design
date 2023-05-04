@@ -19,9 +19,10 @@ const Usage = (): JSX.Element => {
 				<Counter.Increment {...getIncrementProps()} />
 			</Counter>
 
-			<button {...getIncrementProps({ onClick: handleBtn1Clicked })}>Custom increment btn 1</button>
-
-			<button {...getIncrementProps({ disabled: count > MAX_COUNT - 2 })}>Custom increment btn 2</button>
+			<div>
+				<button {...getDecrementProps({ onClick: handleBtn1Clicked })}>Custom decrement btn 1</button>
+				<button {...getIncrementProps({ disabled: count > MAX_COUNT - 2 })}>Custom increment btn 2</button>
+			</div>
 		</>
 	);
 };

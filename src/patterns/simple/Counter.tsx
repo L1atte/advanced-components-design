@@ -20,7 +20,13 @@ const Counter = ({ label, onChange }: { label: string; onChange?: (...args: any[
 
 	return (
 		<>
-			<MinusOutlined onClick={handleDecrement} /> <span>{label ?? ""}</span> {count} <PlusOutlined onClick={handleIncrement} />
+			<button>
+				<MinusOutlined onClick={handleDecrement} />
+			</button>{" "}
+			<span>{label ?? ""}</span> {count}{" "}
+			<button>
+				<PlusOutlined onClick={handleIncrement} />
+			</button>
 		</>
 	);
 };
