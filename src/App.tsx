@@ -5,6 +5,7 @@ import { Usage as Simple } from "./patterns/simple/usage";
 import { Usage as CompoundPattern } from "./patterns/compound-pattern/usage";
 import { Usage as ControlProps } from "./patterns/control-props-pattern/usage";
 import { Usage as CustomHook } from "./patterns/custom-hooks/usage";
+import { Usage as PropsGetter } from "./patterns/props-getter-pattern/usage";
 
 function App() {
 	return (
@@ -43,6 +44,10 @@ function App() {
 			</div>
 			<div>
 				<CustomHook></CustomHook>
+			</div>
+			<div>
+				<div>21</div>
+				<PropsGetter></PropsGetter>
 			</div>
 		</div>
 	);
